@@ -2,16 +2,16 @@
 # Example:
 # find_anagrams("hello", "check") --> False
 # find_anagrams("below", "elbow") --> True
-string_one = input("Enter first string: ")
-string_two = input("Enter second string: ")
+word = input("Enter first string: ")
+anagram = input("Enter second string: ")
 
 
-def find_anagram(string_one, string_two):
+def find_anagram(word, anagram):
     # [assignment] Add your code here
-    if(sorted(string_one) == sorted(string_two)):
+    if(sorted(word) == sorted(anagram)):
         return True
     else:
         return False
 
 
-print(find_anagram(string_one, string_two))
+print(find_anagram(word, anagram))
